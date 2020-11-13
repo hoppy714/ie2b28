@@ -30,6 +30,7 @@ Route::get('kad03_3','Kad03_3Controller@index');
 Route::get('kad05_1','Kad05_1Controller@index');
 Route::get('kad06_1','Kad06_1Controller@index');
 Route::get('kad06_2','Kad06_2Controller@index');
+Route::get('form/','FormController@index');
 //post
 Route::post('kad05_1','Kad05_1Controller@post');
 Route::post('kad06_1','Kad06_1Controller@post');
