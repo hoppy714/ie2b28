@@ -13,6 +13,7 @@ class Kad04_1Controller extends Controller
 
         function createCalender($dt){
             return view('Kad04_1',compact('dt',''))
+            ;
                 }
     }
 }
