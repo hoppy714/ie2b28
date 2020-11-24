@@ -34,3 +34,11 @@ Route::get('form/','FormController@index');
 //post
 Route::post('kad05_1','Kad05_1Controller@post');
 Route::post('kad06_1','Kad06_1Controller@post');
+
+
+
+
+Route::get('posts/{id}', 'PostController@show');
+Route::get('/contact',function(){
+    return view('contact');
+});
