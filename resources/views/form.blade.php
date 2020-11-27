@@ -30,7 +30,48 @@
             (満：
             <input type="text" size="3" name="old"> 歳)
         </div>
+        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+            現在の収入を入力してください
+        </div>
+        <div>
+            <input type="text" size="5" name="income"> 円
+        </div>
+        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+            結婚はしていますか？
+        </div>
+        <div>
+            <input type="radio" name="married" value="yes">している
+            <input type="radio" name="married" value="no">していない<br>
+        </div>
 
+
+        <script type="text/javascript">
+
+        function Sample3(){
+            if ( document.Sample3_form.tatakau.value == "戦う") {
+               document.write("勝ち");
+            }else{
+            document.write("負け");
+          }
+          }
+
+          </script>
+          </head>
+
+
+          <body>
+          <form name="Sample3_form" action="idomu_sample.html">
+          <input id="tatakau" name="tatakau" type="radio" value = "戦う"/>戦う<br>
+          <input id="nigeru" name="tatakau"  type="radio" value = "逃げる"/>逃げる<br>
+          <input type="button" value="決断する" onclick="Sample3()">
+          </form>
+          </body>
+
+        @php
+            if($married == "no"){
+
+            }
+        @endphp
     </body>
 
     </html>
