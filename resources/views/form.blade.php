@@ -44,7 +44,7 @@
 
         function Sample3(){
             if ( document.Sample3_form.tatakau.value == "している") {
-               document.write("してるの！？");
+               document.write("してるの！");
             }else{
             document.write("してないんかい！");
           }
