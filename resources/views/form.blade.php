@@ -39,19 +39,14 @@
         <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             結婚はしていますか？
         </div>
-        <div>
-            <input type="radio" name="married" value="yes">している
-            <input type="radio" name="married" value="no">していない<br>
-        </div>
-
 
         <script type="text/javascript">
 
         function Sample3(){
-            if ( document.Sample3_form.tatakau.value == "戦う") {
-               document.write("勝ち");
+            if ( document.Sample3_form.tatakau.value == "している") {
+               document.write("してるの！？");
             }else{
-            document.write("負け");
+            document.write("してないんかい！");
           }
           }
 
@@ -61,9 +56,9 @@
 
           <body>
           <form name="Sample3_form" action="idomu_sample.html">
-          <input id="tatakau" name="tatakau" type="radio" value = "戦う"/>戦う<br>
-          <input id="nigeru" name="tatakau"  type="radio" value = "逃げる"/>逃げる<br>
-          <input type="button" value="決断する" onclick="Sample3()">
+          <input id="tatakau" name="tatakau" type="radio" value = "している"/>している<br>
+          <input id="nigeru" name="tatakau"  type="radio" value = "していない"/>していない<br>
+          <input type="button" value="診断する" onclick="Sample3()">
           </form>
           </body>
 
