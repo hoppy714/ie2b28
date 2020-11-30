@@ -66,6 +66,7 @@
 
             }
         @endphp
+        <script src="public/js/reel.js"></script>
     </body>
 
     </html>
