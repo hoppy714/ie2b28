@@ -50,12 +50,6 @@
           <input type="button" value="診断する" onclick="marry()">
           </form>
           </body>
-
-        @php
-            if($married == "no"){
-
-            }
-        @endphp
         <script src="public/js/reel.js"></script>
     </body>
 
