@@ -42,7 +42,7 @@
 
         <script type="text/javascript">
 
-        function Sample3(){
+        function marry(){
             if ( document.Sample3_form.tatakau.value == "している") {
                document.write("してるの！");
             }else{
@@ -57,7 +57,7 @@
           <form name="Sample3_form" action="idomu_sample.html">
           <input id="tatakau" name="tatakau" type="radio" value = "している"/>している<br>
           <input id="nigeru" name="tatakau"  type="radio" value = "していない"/>していない<br>
-          <input type="button" value="診断する" onclick="Sample3()">
+          <input type="button" value="診断する" onclick="marry()">
           </form>
           </body>
 
