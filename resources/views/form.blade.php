@@ -53,7 +53,6 @@
           </script>
           </head>
 
-
           <body>
           <form name="Sample3_form" action="idomu_sample.html">
           <input id="tatakau" name="tatakau" type="radio" value = "している"/>している<br>
