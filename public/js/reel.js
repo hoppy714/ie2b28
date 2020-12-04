@@ -5,5 +5,3 @@ function marry(){
     document.write("してないんかい！");
     }
   }
-
-
