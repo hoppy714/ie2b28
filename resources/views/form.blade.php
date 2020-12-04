@@ -28,13 +28,13 @@
         </div>
         <div>
             (満：
-            <input id ="old" type="number" size="3" name="old"> 歳)
+            <input id ="old" type="number" size="3" min="0" name="old"> 歳)
         </div>
         <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             現在の収入を入力してください
         </div>
         <div>
-            <input id = "income" type="number" size="5" name="income"> 円
+            <input id = "income" type="number" size="5" min="0" name="income"> 円
         </div>
         <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             結婚はしていますか？
