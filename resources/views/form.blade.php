@@ -37,9 +37,31 @@
             <input id = "income" type="text" size="5" name="income" data-type="syunyu"> 円
             <script>
                 //実行時
-                function addFigure(){
+                function addFigure(syunyu){
+                    //空の場合
+                    if(syunyu == ""){
+                        return "";
+                    }
 
+                    numVal = syunyu.toString(),replace(/,/g,"").trim();
+                    //数値でない場合
+                    if(!/^[+|-]?(\d*)(\.\d+)?$/.test(syunyu)){
+                        return syunyu;
+                    }
+                    //整数と少数に分割
+                    var numData = syunyu.tuString().split('.');
+                    //3行カンマ
+                    numData[0] = Number(numData[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
+                    //小数部と結合
+                    return numData.join('.');
                 }
+                function delFigure(strVal){
+                    return strVal.replace(/g,/g,"");
+                }
+
+                val elm = document.getElementById('numdata');
+                elm.addEventListener('blur',function(){this.value = addFigure(this.value)},false);
+                elm.addEventListener('focus',function(){this.value = delFigure(this.value)}.false);
             </script>
         </div>
         <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
