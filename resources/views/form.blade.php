@@ -34,7 +34,7 @@
             現在の収入を入力してください
         </div>
         <div>
-            <input id = "income" type="text" size="5" name="income" data-type="syunyu"> 円
+            <input id = "income" type="text" size="5" name="income" > 円
             <script>
                 //実行時
                 function addFigure(syunyu){
@@ -59,7 +59,7 @@
                     return strVal.replace(/g,/g,"");
                 }
 
-                val elm = document.getElementById('numdata');
+                val elm = document.getElementById('income');
                 elm.addEventListener('blur',function(){this.value = addFigure(this.value)},false);
                 elm.addEventListener('focus',function(){this.value = delFigure(this.value)}.false);
             </script>
