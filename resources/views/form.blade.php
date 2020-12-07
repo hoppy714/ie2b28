@@ -61,7 +61,7 @@
 
                 val elm = document.getElementById('income');
                 elm.addEventListener('blur',function(){this.value = addFigure(this.value)},false);
-                elm.addEventListener('focus',function(){this.value = delFigure(this.value)}.false);
+                elm.addEventListener('focus',function(){this.value = delFigure(this.value)},false);
             </script>
         </div>
         <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
