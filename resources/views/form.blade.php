@@ -36,9 +36,9 @@
         <div>
             <input id = "income" type="text" size="5" name="income" data-type="syunyu"> 円
             <script>
-                var NBR = document.querySelectorAll("[data-type = 'number']");
-                for(var i = 0 ; i<NBR.length ; i++){
-                    NBR[i].oninput = fmtinput
+                //実行時
+                function addFigure(){
+
                 }
             </script>
         </div>
