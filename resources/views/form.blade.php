@@ -14,8 +14,17 @@
     <head>
         <title>form</title>
     </head>
-
-    <body>
+    <script type="text/javascript">
+        function marryChange(){
+            radio = document.getElementsByName('married')
+            if(radio[0].checked){
+                document.getElementById('firstBox').style.display = "";
+            }else{
+                document.getElementById('firstBox').style.display = "none";
+            }
+        }
+    </script>
+    <body class="body" onlord ="marryChange();">
         <h2>入力フォーム</h2>
         <div class="form-group">
                 <div
@@ -79,30 +88,10 @@
                     結婚はしていますか？
                 </div>
 
-                <body>
-                    <form name="Sample3_form" action="idomu_sample.html">
-                        <input id="myes" name="married" type="radio" value="している" onchange=marry() />している<br>
-                        <input id="mno" name="married" type="radio" value="していない" onchange=marry() />していない<br>
-                        <script language="javascript" type="text/javascript">
-                function marry() {
-                    var marryed = document.getElementsByName("married");
-                    for (var i = 0; i < marryed.length; i++) {
-                        if (marryed[i].checked) {
-                            console.log("選択された値：", marryed[i].value);
-                            if(marryed[0].checked){
-                        console.log("子ども何人いますか？");
-                        document.write("しているが押されました");
-                    }else{
-                        console.log("将来結婚する予定はありますか？");
-                    }
-                        }
-                    }
-                }
-                marry();
-
-            </script>
-                    </form>
-            </body>
+                <form name="Sample3_form" action="idomu_sample.html">
+                    <input id="myes" name="married" type="radio" value="している" onclick="marryChange()" />している<br>
+                    <input id="mno" name="married" type="radio" value="していない" onclick="marryChange()" />していない<br>
+                </form>
 
             </div>
         </div>

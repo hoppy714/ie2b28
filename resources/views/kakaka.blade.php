@@ -18,11 +18,13 @@
     function marryChange(){
         radio = document.getElementsByName('married')
         if(radio[0].checked){
-            document.getElementById().style.display = "";
+            document.getElementById('firstBox').style.display = "";
+        }else{
+            document.getElementById('firstBox').style.display = "none";
         }
     }
     </script>
-    <body>
+    <body class="body" onload = "marryChange();">
         <h2>入力フォーム</h2>
         <div class="form-group">
                 <div
