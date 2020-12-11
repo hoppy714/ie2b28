@@ -89,6 +89,12 @@
             for (var i = 0; i < marryed.length; i++) {
                 if (marryed[i].checked) {
                     console.log("選択された値：", marryed[i].value);
+                    if(marryed[0].checked){
+                        console.log("子ども何人いますか？");
+                    }else{
+                        console.log("将来結婚する予定はありますか？");
+                    }
+                    }
                 }
             }
         }
