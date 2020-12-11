@@ -61,8 +61,21 @@
                         return numData.join('.');
                     }
 
-                    function delFigure(strVal) {
-                        return strVal.replace(/g,/g, "");
+                <body>
+                    <form name="Sample3_form" action="idomu_sample.html">
+                        <input id="myes" name="married" type="radio" value="している" onchange=marry() />している<br>
+                        <input id="mno" name="married" type="radio" value="していない" onchange=marry() />していない<br>
+                        <script language="javascript" type="text/javascript">
+                function marry() {
+                    var marryed = document.getElementsByName("married");
+                    for (var i = 0; i < marryed.length; i++) {
+                        if (marryed[i].checked) {
+                            console.log("選択された値：", marryed[i].value);
+                            if(marryed[0].checked){
+                        console.log("子ども何人いますか？");
+                        document.write("しているが押されました");
+                    }else{
+                        console.log("将来結婚する予定はありますか？");
                     }
                     val elm = document.getElementById('income');
                     elm.addEventListener('blur', function() {
