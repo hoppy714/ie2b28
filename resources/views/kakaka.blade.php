@@ -14,7 +14,14 @@
     <head>
         <title>form</title>
     </head>
-
+    <script type="text/javascript">
+    function marryChange(){
+        radio = document.getElementsByName('married')
+        if(radio[0].checked){
+            document.getElementById().style.display = "";
+        }
+    }
+    </script>
     <body>
         <h2>入力フォーム</h2>
         <div class="form-group">
@@ -81,10 +88,11 @@
 
                 <body>
                     <form name="Sample3_form" action="idomu_sample.html">
-                        <input id="myes" name="married" type="radio" value="している" onchange=marry() />している<br>
-                        <input id="mno" name="married" type="radio" value="していない" onchange=marry() />していない<br>
+                        <input id="myes" name="married" type="radio" value="している" onclick="marryChange();"/>している<br>
+                        <input id="mno" name="married" type="radio" value="していない" onclick="marryChange();"/>していない<br>
                         <script language="javascript" type="text/javascript">
-                function marry() {
+
+                /*function marry() {
                     var marryed = document.getElementsByName("married");
                     for (var i = 0; i < marryed.length; i++) {
                         if (marryed[i].checked) {
@@ -97,7 +105,7 @@
                     }
                         }
                     }
-                }
+                }*/
                 marry();
 
             </script>
