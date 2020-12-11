@@ -92,7 +92,7 @@
                     }
                 }
             }
-            }
+            marry();
 
         </script>
     </body>
