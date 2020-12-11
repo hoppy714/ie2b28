@@ -16,64 +16,85 @@
     </head>
 
     <body>
-        <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+        <div
+            style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             性別を選択してください
         </div>
         <div>
-            <input id = "gender" type="radio" name="gender" value="male">男性
-            <input id = "gender" type="radio" name="gender" value="female">女性<br>
+            <input id="gender" type="radio" name="gender" value="male">男性
+            <input id="gender" type="radio" name="gender" value="female">女性<br>
         </div>
-        <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+        <div
+            style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             年齢を入力してください
         </div>
         <div>
             (満：
-            <input id ="old" type="number" size="3" min="0" name="old"> 歳)
+            <input id="old" type="number" size="3" min="0" name="old"> 歳)
         </div>
-        <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+        <div
+            style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             現在の収入を入力してください
         </div>
         <div>
-            <input id = "income" type="text" size="5" name="income" > 円
+            <input id="income" type="text" size="5" name="income"> 円
             <script>
                 //実行時
-                function addFigure(syunyu){
+                function addFigure(syunyu) {
                     //空の場合
-                    if(syunyu == ""){
+                    if (syunyu == "") {
                         return "";
                     }
 
-                    numVal = syunyu.toString(),replace(/,/g,"").trim();
+                    numVal = syunyu.toString(), replace(/,/g, "").trim();
                     //数値でない場合
-                    if(!/^[+|-]?(\d*)(\.\d+)?$/.test(syunyu)){
+                    if (!/^[+|-]?(\d*)(\.\d+)?$/.test(syunyu)) {
                         return syunyu;
                     }
                     //整数と少数に分割
                     var numData = syunyu.tuString().split('.');
                     //3行カンマ
-                    numData[0] = Number(numData[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
+                    numData[0] = Number(numData[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
                     //小数部と結合
                     return numData.join('.');
                 }
-                function delFigure(strVal){
-                    return strVal.replace(/g,/g,"");
+
+                function delFigure(strVal) {
+                    return strVal.replace(/g,/g, "");
                 }
                 val elm = document.getElementById('income');
-                elm.addEventListener('blur',function(){this.value = addFigure(this.value)},false);
-                elm.addEventListener('focus',function(){this.value = delFigure(this.value)},false);
+                elm.addEventListener('blur', function() {
+                    this.value = addFigure(this.value)
+                }, false);
+                elm.addEventListener('focus', function() {
+                    this.value = delFigure(this.value)
+                }.false);
+
             </script>
         </div>
-        <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+        <div
+            style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
             結婚はしていますか？
         </div>
 
-          <body>
-          <form name="Sample3_form" action="idomu_sample.html">
-          <input id="myes" name="married" type="radio" value = "している" onclick=marry()/>している<br>
-          <input id="mno" name="married"  type="radio" value = "していない" onclick=marry()/>していない<br>
-          </form>
-          </body>
-        <script src="public/js/reel.js"></script>
+        <body>
+            <form name="Sample3_form" action="idomu_sample.html">
+                <input id="myes" name="married" type="radio" value="している" onchange=marry() />している<br>
+                <input id="mno" name="married" type="radio" value="していない" onchange=marry() />していない<br>
+            </form>
+        </body>
+        <script language="javascript" type="text/javascript">
+            function marry() {
+                var marryed = document.getElementsByName("married");
+                for (var i = 0; i < marryed.length; i++) {
+                    if (marryed[i].checked) {
+                        console.log("選択された値：", marryed[i].value);
+                    }
+                }
+            }
+            }
+
+        </script>
     </body>
 
     </html>
