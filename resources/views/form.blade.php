@@ -83,20 +83,21 @@
                     <form name="Sample3_form" action="idomu_sample.html">
                         <input id="myes" name="married" type="radio" value="している" onchange=marry() />している<br>
                         <input id="mno" name="married" type="radio" value="していない" onchange=marry() />していない<br>
-                    </form>
-            </body>
-            <script language="javascript" type="text/javascript">
+                        <script language="javascript" type="text/javascript">
                 function marry() {
                     var marryed = document.getElementsByName("married");
                     for (var i = 0; i < marryed.length; i++) {
                         if (marryed[i].checked) {
-                            console.log("選択された値：", marryed[i].value);
+                            colsole.log("選択された値：", marryed[i].value);
                         }
                     }
                 }
                 marry();
 
             </script>
+                    </form>
+            </body>
+
             </div>
         </div>
     </body>
