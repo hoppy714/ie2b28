@@ -5,6 +5,8 @@
     }
     body{
         background-color: #333333;
+        width: 500px;
+        height: 100px;
         text-align: center;
     }
 
