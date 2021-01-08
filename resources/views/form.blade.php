@@ -40,8 +40,8 @@
                     年齢を入力してください
                 </div>
                 <div>
-                    (満：
-                    <input id="old" type="number" size="3" min="0" name="old"> 歳)
+                    満：
+                    <input id="old" type="number" size="3" min="0" name="old"> 歳
                 </div>
                 <div
                     style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
@@ -96,6 +96,7 @@
                                     結婚した年はいつですか？
                                     </div>
                                     <select name = "year">
+                                    <option value = "2021"> 2021年 </option>
                                     <option value = "2020"> 2020年 </option>
                                     <option value = "2019"> 2019年 </option>
                                     <option value = "2018"> 2018年 </option>
@@ -123,6 +124,22 @@
                                     <option value = "1996"> 1996年 </option>
                                     <option value = "1995"> 1995年 </option>
                                     </select>
+
+                                    <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+                                        配偶者の年齢を入力してください。
+                                    </div>
+                                    <div>満:
+                                        <input id="old" type="number" size="3" min="0" name="old">歳
+                                    </div>
+
+                                    {{--してないとき--}}
+                                    <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
+                                        結婚の予定はありますか？
+                                    </div>
+                                    <form name="Sample3_form" action="idomu_sample.html">
+                                        <input id="pyes" name="pmarried" type="radio" value="ある" onclick="pmarryChange();"/>ある<br>
+                                        <input id="pno" name="pmarried" type="radio" value="ない" onclick="pmarryChange();"/>ない<br>
+                                    </form>
 
             </div>
         </div>
