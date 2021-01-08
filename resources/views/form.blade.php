@@ -121,12 +121,6 @@
                                     <option value = "2003"> 2003年 </option>
                                     <option value = "2002"> 2002年 </option>
                                     <option value = "2001"> 2001年 </option>
-                                    <option value = "2000"> 2000年 </option>
-                                    <option value = "1999"> 1999年 </option>
-                                    <option value = "1998"> 1998年 </option>
-                                    <option value = "1997"> 1997年 </option>
-                                    <option value = "1996"> 1996年 </option>
-                                    <option value = "1995"> 1995年 </option>
                                     </select>
 
                                     <div style="background-color:#e0ffff; padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
