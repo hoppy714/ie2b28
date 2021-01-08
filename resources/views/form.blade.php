@@ -1,6 +1,10 @@
 <style>
-    body {
+    body::after {
         background-color: #0ed145;
+
+    }
+    body{
+        background-color: #333333;
         text-align: center;
     }
 
